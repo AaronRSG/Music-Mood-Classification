@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44514a77-27a8-487e-bbb0-09c6672f6e4b" name="Default" comment="">
+    <list default="true" id="44514a77-27a8-487e-bbb0-09c6672f6e4b" name="Default" comment="Added createTable() - Creates New SQLite Table in Specified Database">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataSetInfo.java" afterPath="$PROJECT_DIR$/src/DataSetInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Features.java" afterPath="$PROJECT_DIR$/src/Features.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="Music-Mood-Classification.iws" />
@@ -62,10 +62,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="1768" selection-end="1768" vertical-scroll-proportion="0.51166964">
+            <state line="30" column="53" selection-start="1893" selection-end="1893" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -82,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Features.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Features.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Features.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="65" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0">
+            <state line="59" column="36" selection-start="2490" selection-end="2490" vertical-scroll-proportion="1.3052064">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,9 +127,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/Tags.java" />
         <option value="$PROJECT_DIR$/src/Lyrics.java" />
-        <option value="$PROJECT_DIR$/src/Features.java" />
         <option value="$PROJECT_DIR$/src/DataSetInfo.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Features.java" />
       </list>
     </option>
   </component>
@@ -431,7 +431,11 @@
       <created>1445180266333</created>
       <updated>1445180266333</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added createTable() - Creates New SQLite Table in Specified Database">
+      <created>1445182872019</created>
+      <updated>1445182872019</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -497,7 +501,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Additional Audio Features to be Analysed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added createTable() - Creates New SQLite Table in Specified Database" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -517,6 +521,7 @@
     <MESSAGE value="Added getFullLyrics() - Print out track_id, tag, score, mood and full lyrics for songs where mood != NULL" />
     <MESSAGE value="Initial Use of Echo Nest API from Sample code" />
     <MESSAGE value="Added Additional Audio Features to be Analysed" />
+    <MESSAGE value="Added createTable() - Creates New SQLite Table in Specified Database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -540,22 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tags.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="128" selection-start="104" selection-end="209" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Features.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="65" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataSetInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
@@ -565,10 +554,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tags.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="128" selection-start="104" selection-end="209" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="1768" selection-end="1768" vertical-scroll-proportion="0.51166964">
+        <state line="30" column="53" selection-start="1893" selection-end="1893" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Features.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="36" selection-start="2490" selection-end="2490" vertical-scroll-proportion="1.3052064">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
