@@ -4,6 +4,7 @@ public class Lyrics {
     DataSetInfo dsi = new DataSetInfo();
     String dbLyrics = "jdbc:sqlite:C:\\Users\\Aaron\\Documents\\Final Year\\FinalYearProject\\MSD\\MusiXMatch\\mxm_dataset.db";
     String dbSongs = "jdbc:sqlite:C:\\Users\\Aaron\\Documents\\Final Year\\FinalYearProject\\MSD\\MillionSongSubset\\AdditionalFiles\\subset_track_metadata.db";
+    String dbFullLyrics = "jdbc:sqlite:C:\\Users\\Aaron\\Documents\\Final Year\\FinalYearProject\\Full-Lyrics.db";
 
     public void getLyrics(){
         try{
@@ -25,6 +26,23 @@ public class Lyrics {
                 System.out.println("****************************************");
             }
         } catch (SQLException ex){
+            ex.printStackTrace();
+        }
+    }
+
+    public void getFullLyrics(){
+        try{
+            ResultSet rs = dsi.getInfo(dbFullLyrics, "SELECT track_id, tag, score, mood, lyrics FROM full_lyrics_view WHERE mood!=\'NULL\'");
+            while (rs.next()){
+                String track_id = rs.getString("track_id");
+                String tag = rs.getString("tag");
+                String score = rs.getString("score");
+                String mood = rs.getString("mood");
+                String lyrics = rs.getString("lyrics");
+                System.out.println(track_id + " - " + tag + " - " +
+                        score + " - " + mood + " - " + lyrics);
+            }
+        }catch (SQLException ex){
             ex.printStackTrace();
         }
     }

@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="44514a77-27a8-487e-bbb0-09c6672f6e4b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lyrics.java" afterPath="$PROJECT_DIR$/src/Lyrics.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tags.java" afterPath="$PROJECT_DIR$/src/Tags.java" />
     </list>
     <ignored path="Music-Mood-Classification.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,7 +65,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="8" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
+            <state line="4" column="26" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -91,19 +91,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tags.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Tags.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tags.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="5" selection-start="1492" selection-end="1492" vertical-scroll-proportion="1.6887417">
+            <state line="5" column="32" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Lyrics.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Lyrics.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Lyrics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="5" selection-start="1487" selection-end="1487" vertical-scroll-proportion="0.0">
+            <state line="34" column="138" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.25779626">
               <folding />
             </state>
           </provider>
@@ -125,9 +125,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/Features.java" />
         <option value="$PROJECT_DIR$/src/DataSetInfo.java" />
-        <option value="$PROJECT_DIR$/src/Lyrics.java" />
         <option value="$PROJECT_DIR$/src/Tags.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Lyrics.java" />
       </list>
     </option>
   </component>
@@ -411,12 +411,16 @@
       <created>1445162004561</created>
       <updated>1445162004561</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added getTags() - Print out tags for million song subset from Lastfm database">
+      <created>1445162214356</created>
+      <updated>1445162214356</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="680" height="728" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -432,7 +436,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6703499" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296501" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296501" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -477,7 +481,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added getLyrics()   - Print Lyrics from mxm database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added getTags() - Print out tags for million song subset from Lastfm database" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -493,6 +497,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Added ability to retrieve information from database" />
     <MESSAGE value="Added getLyrics()   - Print Lyrics from mxm database" />
+    <MESSAGE value="Added getTags() - Print out tags for million song subset from Lastfm database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -518,23 +523,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lyrics.java">
+    <entry file="file://$PROJECT_DIR$/src/Tags.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="5" selection-start="1487" selection-end="1487" vertical-scroll-proportion="0.0">
+        <state line="5" column="32" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
+        <state line="4" column="26" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tags.java">
+    <entry file="file://$PROJECT_DIR$/src/Lyrics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="5" selection-start="1492" selection-end="1492" vertical-scroll-proportion="1.6887417">
+        <state line="34" column="138" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.25779626">
           <folding />
         </state>
       </provider>
