@@ -10,7 +10,7 @@ public class Main {
 //        t.getTags();
         try {
             Features f = new Features();
-            f.searchSongByArtist("weezer", 5);
+            f.searchSongByArtist("Nadine Renee", "Next Time", 5);
         } catch (EchoNestException e) {
             e.printStackTrace();
         }

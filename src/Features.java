@@ -1,7 +1,4 @@
-import com.echonest.api.v4.EchoNestAPI;
-import com.echonest.api.v4.EchoNestException;
-import com.echonest.api.v4.Song;
-import com.echonest.api.v4.SongParams;
+import com.echonest.api.v4.*;
 
 import java.util.List;
 
@@ -16,27 +13,37 @@ public class Features {
     }
 
     public void dumpSong(Song song) throws EchoNestException {
-        System.out.printf("%s\n", song.getTitle());
-        System.out.printf("   artist: %s\n", song.getArtistName());
-        System.out.printf("   dur   : %.3f\n", song.getDuration());
-        System.out.printf("   BPM   : %.3f\n", song.getTempo());
-        System.out.printf("   Mode  : %d\n", song.getMode());
-        System.out.printf("   S hot : %.3f\n", song.getSongHotttnesss());
-        System.out.printf("   A hot : %.3f\n", song.getArtistHotttnesss());
-        System.out.printf("   A fam : %.3f\n", song.getArtistFamiliarity());
-        System.out.printf("   A loc : %s\n", song.getArtistLocation());
+        System.out.println(song.getTitle());
+        System.out.println("    Track ID : " + song.getID());
+        System.out.println("    Artist : " + song.getArtistName());
+        System.out.println("    Duration : " + song.getDuration());
+        System.out.println("    Danceability : " + song.getDanceability());
+        System.out.println("    End of Fade In : " + song.getAnalysis().getEndOfFadeIn());
+        System.out.println("    Energy : " + song.getEnergy());
+        System.out.println("    Key : " + song.getKey());
+        System.out.println("    Key Confidence : " + song.getAnalysis().getKeyConfidence());
+        System.out.println("    Loudness" + song.getLoudness());
+        System.out.println("    Mode : " + song.getMode());
+        System.out.println("    Mode Confidence : " + song.getAnalysis().getModeConfidence());
+        System.out.println("    Song Hotness : " + song.getSongHotttnesss());
+        System.out.println("    Start of Fade Out : " + song.getAnalysis().getStartOfFadeOut());
+        System.out.println("    Tempo : " + song.getTempo());
+        System.out.println("    Time Signature : " + song.getTimeSignature());
+
 
     }
 
-    public void searchSongByArtist(String artist, int results)throws EchoNestException{
+    public void searchSongByArtist(String artist, String title, int results)throws EchoNestException{
         SongParams p = new SongParams();
         p.setArtist(artist);
+        p.setTitle(title);
         p.includeAudioSummary();
         p.includeArtistHotttnesss();
         p.includeSongHotttnesss();
         p.includeArtistFamiliarity();
         p.includeArtistLocation();
-        p.sortBy("song_hotttnesss", false);
+        p.sortBy("tempo", false);
+        p.add("results", results);
 
         List<Song> songs = en.searchSongs(p);
         for (Song song : songs){
