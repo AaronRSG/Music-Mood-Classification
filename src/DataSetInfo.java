@@ -3,6 +3,23 @@ import com.sun.rowset.CachedRowSetImpl;
 import java.sql.*;
 
 public class DataSetInfo {
+    public void createTable(String dbURL, String query){
+        Connection connection = null;
+        Statement statement = null;
+        try{
+            Class.forName("org.sqlite.JDBC");
+            connection = DriverManager.getConnection(dbURL);
+            statement = connection.createStatement();
+            statement.executeQuery(query);
+            statement.close();
+        } catch (SQLException ex){
+            ex.printStackTrace();
+        } catch (ClassNotFoundException ex){
+            ex.printStackTrace();
+        }
+        System.out.println("The table has been created successfully.");
+    }
+
     public ResultSet getInfo(String dbURL, String query) throws SQLException {
         Connection connection = null;
         Statement statement = null;
