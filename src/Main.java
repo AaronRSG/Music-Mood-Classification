@@ -1,10 +1,18 @@
+import com.echonest.api.v4.EchoNestException;
+
 public class Main {
     public static void main(String args[]){
-        Lyrics l = new Lyrics();
+//        Lyrics l = new Lyrics();
 //        l.getLyrics();
-        l.getFullLyrics();
+//        l.getFullLyrics();
 
 //        Tags t = new Tags();
 //        t.getTags();
+        try {
+            Features f = new Features();
+            f.searchSongByArtist("weezer", 5);
+        } catch (EchoNestException e) {
+            e.printStackTrace();
+        }
     }
 }
