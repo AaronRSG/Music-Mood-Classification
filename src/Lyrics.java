@@ -1,4 +1,5 @@
 import java.sql.*;
+import java.util.ArrayList;
 
 public class Lyrics {
     DataSetInfo dsi = new DataSetInfo();
@@ -28,6 +29,23 @@ public class Lyrics {
         } catch (SQLException ex){
             ex.printStackTrace();
         }
+    }
+
+    public ArrayList<SongDetails> getDetails(){
+        ArrayList<SongDetails> details = new ArrayList<SongDetails>();
+        try{
+            ResultSet rs = dsi.getInfo(dbSongs, "SELECT artist_name, title FROM songs LIMIT 5");
+            while (rs.next()){
+                String artist = rs.getString("artist_name");
+                String title = rs.getString("title");
+
+                SongDetails sd = new SongDetails(artist, title);
+                details.add(sd);
+            }
+        }catch (SQLException ex){
+            ex.printStackTrace();
+        }
+        return details;
     }
 
     public void getFullLyrics(){
