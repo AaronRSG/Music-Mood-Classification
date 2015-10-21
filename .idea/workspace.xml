@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44514a77-27a8-487e-bbb0-09c6672f6e4b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SongLyrics.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Features.java" afterPath="$PROJECT_DIR$/src/Features.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="Music-Mood-Classification.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,6 +81,15 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="SongLyrics.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/SongLyrics.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="45" column="29" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.9364486">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="DataSetInfo.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/DataSetInfo.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -91,10 +99,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Features.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="Features.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Features.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="79" column="33" selection-start="3247" selection-end="3247" vertical-scroll-proportion="1.125">
+                <state line="79" column="33" selection-start="3247" selection-end="3247" vertical-scroll-proportion="0.0">
                   <folding>
                     <element signature="e#2839#2853#0" expanded="true" />
                   </folding>
@@ -115,10 +123,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Lyrics.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="Lyrics.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Lyrics.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="23" selection-start="411" selection-end="423" vertical-scroll-proportion="-1.03125">
+                <state line="52" column="15" selection-start="2301" selection-end="2305" vertical-scroll-proportion="0.375">
                   <folding />
                 </state>
               </provider>
@@ -151,11 +159,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/DataSetInfo.java" />
         <option value="$PROJECT_DIR$/src/SongDetails.java" />
-        <option value="$PROJECT_DIR$/src/Lyrics.java" />
         <option value="$PROJECT_DIR$/src/SongFeatures.java" />
         <option value="$PROJECT_DIR$/src/Tags.java" />
         <option value="$PROJECT_DIR$/src/Features.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/SongLyrics.java" />
+        <option value="$PROJECT_DIR$/src/Lyrics.java" />
       </list>
     </option>
   </component>
@@ -487,7 +496,11 @@
       <created>1445429469777</created>
       <updated>1445429469777</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added getFeatures() - Retrieve all the feature values and return in an ArrayList">
+      <created>1445430586858</created>
+      <updated>1445430586858</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -507,7 +520,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14958239" sideWeight="0.60102737" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14958239" sideWeight="0.60102737" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7482877" sideWeight="0.4969651" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -553,7 +566,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add feature values to database and small fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added getFeatures() - Retrieve all the feature values and return in an ArrayList" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -579,6 +592,7 @@
     <MESSAGE value="Added getDetails() - Creates SongDetails object out of songs retrieved from million song subset" />
     <MESSAGE value="Added SongFeatures Object to handle feature values retrieved from sqlite database" />
     <MESSAGE value="Add feature values to database and small fixes" />
+    <MESSAGE value="Added getFeatures() - Retrieve all the feature values and return in an ArrayList" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -619,20 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SongDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="16" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lyrics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="23" selection-start="411" selection-end="423" vertical-scroll-proportion="-1.03125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="0" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.0">
@@ -642,10 +642,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Features.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="33" selection-start="3247" selection-end="3247" vertical-scroll-proportion="1.125">
+        <state line="79" column="33" selection-start="3247" selection-end="3247" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#2839#2853#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SongDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="16" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SongLyrics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="29" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.9364486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lyrics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="15" selection-start="2301" selection-end="2305" vertical-scroll-proportion="0.375">
+          <folding />
         </state>
       </provider>
     </entry>
