@@ -34,13 +34,15 @@ public class Lyrics {
     public ArrayList<SongDetails> getDetails(){
         ArrayList<SongDetails> details = new ArrayList<SongDetails>();
         try{
-            ResultSet rs = dsi.getInfo(dbSongs, "SELECT artist_name, title FROM songs LIMIT 5");
+            ResultSet rs = dsi.getInfo(dbSongs, "SELECT artist_name, title FROM songs");
             while (rs.next()){
                 String artist = rs.getString("artist_name");
                 String title = rs.getString("title");
 
                 SongDetails sd = new SongDetails(artist, title);
-                details.add(sd);
+                if(!sd.getTitle().equals("")){
+                    details.add(sd);
+                }
             }
         }catch (SQLException ex){
             ex.printStackTrace();

@@ -30,13 +30,14 @@ public class Main {
         ArrayList<SongDetails> details = l.getDetails();
         try{
             Features f = new Features();
-            f.getFeatures("DJ Harry", "\'Round the Wheel", 1);
-            for(SongDetails sd :details){
-//                f.getFeatures(sd.getArtist(), sd.getTitle(), 1);
-                System.out.println("Successfully added " + sd.toString());
+//            f.getFeatures("DJ Harry", "\'Round the Wheel", 1);
+            for(SongDetails sd :details.subList(1835,9999)){
+                f.getFeaturesToAdd(sd.getArtist(), sd.getTitle(), 1);
+                System.out.println("Successfully added " + sd.toString() + "\n");
             }
         }catch (EchoNestException ex){
             ex.printStackTrace();
+
         }
 //        l.getLyrics();
 //        l.getFullLyrics();

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44514a77-27a8-487e-bbb0-09c6672f6e4b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SongFeatures.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Features.java" afterPath="$PROJECT_DIR$/src/Features.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lyrics.java" afterPath="$PROJECT_DIR$/src/Lyrics.java" />
@@ -471,7 +470,11 @@
       <created>1445338334292</created>
       <updated>1445338334292</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added SongFeatures Object to handle feature values retrieved from sqlite database">
+      <created>1445429426594</created>
+      <updated>1445429426594</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -537,7 +540,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added getDetails() - Creates SongDetails object out of songs retrieved from million song subset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added SongFeatures Object to handle feature values retrieved from sqlite database" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -561,6 +564,7 @@
     <MESSAGE value="Added insertFeatures() - Adds song feature details to database" />
     <MESSAGE value="Created SongDetails Object for artist name and title" />
     <MESSAGE value="Added getDetails() - Creates SongDetails object out of songs retrieved from million song subset" />
+    <MESSAGE value="Added SongFeatures Object to handle feature values retrieved from sqlite database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

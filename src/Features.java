@@ -43,7 +43,7 @@ public class Features {
         }
     }
 
-    public void getFeatures(String artist, String title, int results)throws EchoNestException{
+    public void getFeaturesToAdd(String artist, String title, int results)throws EchoNestException{
         SongParams p = new SongParams();
         p.setArtist(artist);
         p.setTitle(title);
