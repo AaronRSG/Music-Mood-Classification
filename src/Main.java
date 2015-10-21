@@ -40,17 +40,23 @@ public class Main {
 //
 //        }
 
-        ArrayList<SongFeatures> features;
-        try {
-            Features f = new Features();
-            features = f.getFeatures();
-
-            for(SongFeatures sf : features){
-                System.out.println(sf.toString());
-            }
-        } catch (EchoNestException ex) {
-            ex.printStackTrace();
+        Lyrics l = new Lyrics();
+        ArrayList<SongLyrics> lyrics = l.getFullLyrics();
+        for (SongLyrics sl: lyrics){
+            System.out.println(sl.toString());
         }
+
+//        ArrayList<SongFeatures> features;
+//        try {
+//            Features f = new Features();
+//            features = f.getFeatures();
+//
+//            for(SongFeatures sf : features){
+//                System.out.println(sf.toString());
+//            }
+//        } catch (EchoNestException ex) {
+//            ex.printStackTrace();
+//        }
 //        l.getLyrics();
 //        l.getFullLyrics();
 

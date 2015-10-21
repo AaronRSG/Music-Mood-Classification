@@ -50,20 +50,24 @@ public class Lyrics {
         return details;
     }
 
-    public void getFullLyrics(){
+    public ArrayList<SongLyrics> getFullLyrics(){
+        ArrayList<SongLyrics> fullLyrics = new ArrayList<SongLyrics>();
         try{
-            ResultSet rs = dsi.getInfo(dbFullLyrics, "SELECT track_id, tag, score, mood, lyrics FROM full_lyrics_view WHERE mood!=\'NULL\'");
+            ResultSet rs = dsi.getInfo(dbFullLyrics, "SELECT * FROM full_lyrics_view WHERE mood!=\'NULL\'");
             while (rs.next()){
                 String track_id = rs.getString("track_id");
                 String tag = rs.getString("tag");
                 String score = rs.getString("score");
                 String mood = rs.getString("mood");
                 String lyrics = rs.getString("lyrics");
-                System.out.println(track_id + " - " + tag + " - " +
-                        score + " - " + mood + " - " + lyrics);
+
+                SongLyrics sl = new SongLyrics(track_id, tag, score,
+                        mood, lyrics);
+                fullLyrics.add(sl);
             }
         }catch (SQLException ex){
             ex.printStackTrace();
         }
+        return fullLyrics;
     }
 }
