@@ -26,18 +26,30 @@ public class Main {
 //        DataSetInfo dsi = new DataSetInfo();
 //        dsi.createTable(dbFeatures, FeatureTable);
 
-        Lyrics l = new Lyrics();
-        ArrayList<SongDetails> details = l.getDetails();
-        try{
-            Features f = new Features();
+//        Lyrics l = new Lyrics();
+//        ArrayList<SongDetails> details = l.getDetails();
+//        try{
+//            Features f = new Features();
 //            f.getFeatures("DJ Harry", "\'Round the Wheel", 1);
-            for(SongDetails sd :details.subList(1835,9999)){
-                f.getFeaturesToAdd(sd.getArtist(), sd.getTitle(), 1);
-                System.out.println("Successfully added " + sd.toString() + "\n");
-            }
-        }catch (EchoNestException ex){
-            ex.printStackTrace();
+//            for(SongDetails sd :details.subList(1835,9999)){
+//                f.getFeaturesToAdd(sd.getArtist(), sd.getTitle(), 1);
+//                System.out.println("Successfully added " + sd.toString() + "\n");
+//            }
+//        }catch (EchoNestException ex){
+//            ex.printStackTrace();
+//
+//        }
 
+        ArrayList<SongFeatures> features;
+        try {
+            Features f = new Features();
+            features = f.getFeatures();
+
+            for(SongFeatures sf : features){
+                System.out.println(sf.toString());
+            }
+        } catch (EchoNestException ex) {
+            ex.printStackTrace();
         }
 //        l.getLyrics();
 //        l.getFullLyrics();
