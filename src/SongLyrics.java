@@ -18,7 +18,8 @@ public class SongLyrics {
                 ", tag = " + tag +
                 ", score = " + score +
                 ", mood = " + mood +
-                ", lyrics = " + lyrics;
+                ", lyrics = " + lyrics +
+                ", quadrant = " + quadrant + " ]";
     }
 
     public String getTrack_id(){

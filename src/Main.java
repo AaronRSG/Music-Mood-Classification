@@ -44,7 +44,19 @@ public class Main {
         for(SongLyrics song: dataSet){
             String mood = song.getMood();
             String quadrant = song.getQuadrant();
-            System.out.println(song.getTrack_id() + " " + song.getMood());
+            if(song.getMood().equalsIgnoreCase("G1") || song.getMood().equalsIgnoreCase("G2") ||
+                    song.getMood().equalsIgnoreCase("G5") || song.getMood().equalsIgnoreCase("G6") ||
+                    song.getMood().equalsIgnoreCase("G7") || song.getMood().equalsIgnoreCase("G9")) quadrant = "v+a+";
+            if(song.getMood().equalsIgnoreCase("G8") || song.getMood().equalsIgnoreCase("G11") ||
+                    song.getMood().equalsIgnoreCase("G12") || song.getMood().equalsIgnoreCase("G14") ||
+                    song.getMood().equalsIgnoreCase("G32")) quadrant = "v+a-";
+            if(song.getMood().equalsIgnoreCase("G25") || song.getMood().equalsIgnoreCase("G28") ||
+                    song.getMood().equalsIgnoreCase("G29")) quadrant = "v-a+";
+            if(song.getMood().equalsIgnoreCase("G15") || song.getMood().equalsIgnoreCase("G16") ||
+                    song.getMood().equalsIgnoreCase("G17") || song.getMood().equalsIgnoreCase("G31")) quadrant = "v-a-";
+            song.setQuadrant(quadrant);
+
+            System.out.println(song.getTrack_id() + " " + song.getMood() + " " + song.getQuadrant());
 
         }
 
