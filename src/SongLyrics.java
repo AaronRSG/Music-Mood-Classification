@@ -11,6 +11,7 @@ public class SongLyrics {
     private String score;
     private String mood;
     private String lyrics;
+    private String quadrant;
 
     public String toString(){
         return "[ track_id = " + track_id +
@@ -35,6 +36,12 @@ public class SongLyrics {
     public String getLyrics(){
         return lyrics;
     }
+    public String getQuadrant(){
+        return quadrant;
+    }
+    public void setQuadrant(String q){
+        this.quadrant = q;
+    }
 
     public SongLyrics(String track_id, String tag, String score,
                       String mood, String lyrics){
@@ -44,5 +51,6 @@ public class SongLyrics {
         this.score = score;
         this.mood = mood;
         this.lyrics = lyrics;
+        this.quadrant = "";
     }
 }

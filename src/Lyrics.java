@@ -1,5 +1,6 @@
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Lyrics {
     DataSetInfo dsi = new DataSetInfo();
@@ -50,10 +51,10 @@ public class Lyrics {
         return details;
     }
 
-    public ArrayList<SongLyrics> getFullLyrics(){
+    public ArrayList<SongLyrics> getFullLyrics(String query){
         ArrayList<SongLyrics> fullLyrics = new ArrayList<SongLyrics>();
         try{
-            ResultSet rs = dsi.getInfo(dbFullLyrics, "SELECT * FROM full_lyrics_view WHERE mood!=\'NULL\'");
+            ResultSet rs = dsi.getInfo(dbFullLyrics, query);
             while (rs.next()){
                 String track_id = rs.getString("track_id");
                 String tag = rs.getString("tag");
@@ -61,13 +62,31 @@ public class Lyrics {
                 String mood = rs.getString("mood");
                 String lyrics = rs.getString("lyrics");
 
-                SongLyrics sl = new SongLyrics(track_id, tag, score,
-                        mood, lyrics);
+                SongLyrics sl = new SongLyrics(track_id, tag, score, mood, lyrics);
                 fullLyrics.add(sl);
             }
         }catch (SQLException ex){
             ex.printStackTrace();
         }
         return fullLyrics;
+    }
+
+    public ArrayList<SongLyrics> buildDataSet(){
+        ArrayList<SongLyrics> q1 = getFullLyrics("SELECT * FROM full_lyrics_view WHERE mood IN (\'G1\'," +
+                                                "\'G2\', \'G5\', \'G6\', \'G7\', \'G9\') ORDER BY RANDOM() LIMIT 1200"); // quadrant - v+a+
+        ArrayList<SongLyrics> q2 = getFullLyrics("SELECT * FROM full_lyrics_view WHERE mood IN (\'G8\', " +
+                                                "\'G11\', \'G12\', \'G14\', \'G32\') ORDER BY RANDOM() LIMIT 1200"); // quadrant - v+a-
+        ArrayList<SongLyrics> q3 = getFullLyrics("SELECT * FROM full_lyrics_view WHERE mood IN (\'G25\', " +
+                                                "\'G28\', \'G29\') ORDER BY RANDOM() LIMIT 1200"); // quadrant v-a+
+        ArrayList<SongLyrics> q4 = getFullLyrics("SELECT * FROM full_lyrics_view WHERE mood IN (\'G15\'," +
+                                                "\'G16\', \'G17\', \'G31\') ORDER BY RANDOM() LIMIT 1200"); //quadrant v-a-
+
+        ArrayList<SongLyrics> dataSet = new ArrayList<SongLyrics>();
+        dataSet.addAll(q1);
+        dataSet.addAll(q2);
+        dataSet.addAll(q3);
+        dataSet.addAll(q4);
+
+        return dataSet;
     }
 }

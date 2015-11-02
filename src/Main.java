@@ -30,8 +30,7 @@ public class Main {
 //        ArrayList<SongDetails> details = l.getDetails();
 //        try{
 //            Features f = new Features();
-//            f.getFeatures("DJ Harry", "\'Round the Wheel", 1);
-//            for(SongDetails sd :details.subList(1835,9999)){
+//            for(SongDetails sd :details.subList(2315,9999)){
 //                f.getFeaturesToAdd(sd.getArtist(), sd.getTitle(), 1);
 //                System.out.println("Successfully added " + sd.toString() + "\n");
 //            }
@@ -41,10 +40,19 @@ public class Main {
 //        }
 
         Lyrics l = new Lyrics();
-        ArrayList<SongLyrics> lyrics = l.getFullLyrics();
-        for (SongLyrics sl: lyrics){
-            System.out.println(sl.toString());
+        ArrayList<SongLyrics> dataSet = l.buildDataSet();
+        for(SongLyrics song: dataSet){
+            String mood = song.getMood();
+            String quadrant = song.getQuadrant();
+            System.out.println(song.getTrack_id() + " " + song.getMood());
+
         }
+
+//        Lyrics l = new Lyrics();
+//        ArrayList<SongLyrics> lyrics = l.getFullLyrics();
+//        for (SongLyrics sl: lyrics){
+//            System.out.println(sl.toString());
+//        }
 
 //        ArrayList<SongFeatures> features;
 //        try {

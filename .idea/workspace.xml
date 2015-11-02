@@ -5,6 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lyrics.java" afterPath="$PROJECT_DIR$/src/Lyrics.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SongLyrics.java" afterPath="$PROJECT_DIR$/src/SongLyrics.java" />
     </list>
     <ignored path="Music-Mood-Classification.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,92 +62,73 @@
     <favorites_list name="Music-Mood-Classification" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="46" column="17" selection-start="2307" selection-end="2307" vertical-scroll-proportion="0.48850575">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SongDetails.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/SongDetails.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="25" column="16" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SongLyrics.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/SongLyrics.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="45" column="29" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DataSetInfo.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/DataSetInfo.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="80" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Features.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Features.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="79" column="33" selection-start="3247" selection-end="3247" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="e#2839#2853#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Tags.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Tags.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="42" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="Lyrics.java" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Lyrics.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="65" column="35" selection-start="2981" selection-end="2981" vertical-scroll-proportion="0.78125">
-                  <folding>
-                    <element signature="e#2396#2408#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SongFeatures.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/SongFeatures.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="116" column="45" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="72" selection-start="2352" selection-end="2352" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SongDetails.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SongDetails.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="16" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SongLyrics.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SongLyrics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="27" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lyrics.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Lyrics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="88" column="8" selection-start="4250" selection-end="4250" vertical-scroll-proportion="0.92931396">
+              <folding>
+                <element signature="e#4122#4134#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataSetInfo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataSetInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="80" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Features.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Features.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="31" selection-start="2186" selection-end="2186" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tags.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tags.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="42" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -166,16 +148,14 @@
         <option value="$PROJECT_DIR$/src/Tags.java" />
         <option value="$PROJECT_DIR$/src/Features.java" />
         <option value="$PROJECT_DIR$/src/SongLyrics.java" />
-        <option value="$PROJECT_DIR$/src/Lyrics.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Lyrics.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="683" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -203,20 +183,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Music-Mood-Classification" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Music-Mood-Classification" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -257,6 +223,20 @@
             <PATH_ELEMENT USER_OBJECT="Root">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Music-Mood-Classification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Music-Mood-Classification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -507,12 +487,16 @@
       <created>1445430988222</created>
       <updated>1445430988222</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Changed getFullLyrics() to return ArrayList of SongLyrics Object and print out songs where mood != NULL">
+      <created>1445431347080</created>
+      <updated>1445431347080</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="0" width="683" height="728" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -527,8 +511,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14958239" sideWeight="0.25171232" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7482877" sideWeight="0.4969651" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3171521" sideWeight="0.95719177" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.74769795" sideWeight="0.4969651" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -573,7 +557,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created SongLyrics Object to hand tag, mood, score and lyrics" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed getFullLyrics() to return ArrayList of SongLyrics Object and print out songs where mood != NULL" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -601,6 +585,7 @@
     <MESSAGE value="Add feature values to database and small fixes" />
     <MESSAGE value="Added getFeatures() - Retrieve all the feature values and return in an ArrayList" />
     <MESSAGE value="Created SongLyrics Object to hand tag, mood, score and lyrics" />
+    <MESSAGE value="Changed getFullLyrics() to return ArrayList of SongLyrics Object and print out songs where mood != NULL" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -620,63 +605,51 @@
         <state line="85" column="0" selection-start="4244" selection-end="4244" vertical-scroll-proportion="0.71375465" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SongFeatures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="45" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.71875" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataSetInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="80" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="15" column="80" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Features.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="31" selection-start="2186" selection-end="2186" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tags.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="42" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SongFeatures.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="45" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="15" column="42" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SongDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="16" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
+        <state line="25" column="16" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="72" selection-start="2352" selection-end="2352" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SongLyrics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="29" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0">
+        <state line="53" column="27" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Features.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="33" selection-start="3247" selection-end="3247" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#2839#2853#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lyrics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="35" selection-start="2981" selection-end="2981" vertical-scroll-proportion="0.78125">
+        <state line="88" column="8" selection-start="4250" selection-end="4250" vertical-scroll-proportion="0.92931396">
           <folding>
-            <element signature="e#2396#2408#0" expanded="true" />
+            <element signature="e#4122#4134#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="17" selection-start="2307" selection-end="2307" vertical-scroll-proportion="0.48850575">
-          <folding />
         </state>
       </provider>
     </entry>
