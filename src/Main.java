@@ -56,11 +56,15 @@ public class Main {
                     song.getMood().equalsIgnoreCase("G17") || song.getMood().equalsIgnoreCase("G31")) quadrant = "v-a-";
             song.setQuadrant(quadrant);
 
-            System.out.println(song.getTrack_id() + " " + song.getMood() + " " + song.getQuadrant());
-
         }
 
-        ArrayList<Stopwords> st = new ArrayList<Stopwords>();
+        Stopwords st = new Stopwords();
+        ArrayList<String> list = st.loadWords("C:\\Users\\Aaron\\Documents\\Final Year\\FinalYearProject\\Music-Mood-Classification\\Stopwords.txt");
+        for(String s: list){
+            System.out.println(s);
+        }
+
+
 
 //        Lyrics l = new Lyrics();
 //        ArrayList<SongLyrics> lyrics = l.getFullLyrics();

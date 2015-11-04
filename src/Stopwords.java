@@ -1,44 +1,21 @@
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.HashSet;
-import java.util.Set;
+import java.io.IOException;
+import java.util.ArrayList;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Aaron
- * Date: 03/11/15
- * Time: 18:38
- * To change this template use File | Settings | File Templates.
- */
 public class Stopwords {
-    protected Set<String> words = new HashSet<String>();
-    protected static Stopwords stopwords;
-    static {
-        if(stopwords == null){
-            stopwords = new Stopwords();
-        }
-    }
-
-    public void addWord(String word){
-        if(word.trim().length() > 0){
-            words.add(word.trim().toLowerCase());
-        }
-    }
-
-    public Stopwords(){
-        words = new HashSet();
+    public ArrayList<String> loadWords(String file) {
+        ArrayList<String> words = new ArrayList<String>();
         try{
-            FileReader fr = new FileReader("C:\\Users\\Aaron\\Documents\\Final Year\\FinalYearProject\\Music-Mood-Classification\\Stopwords.txt");
-            BufferedReader br = new BufferedReader(fr);
+            BufferedReader br = new BufferedReader(new FileReader(file));
             String line;
             while ((line = br.readLine()) != null){
-                line = line.trim();
-                addWord(line);
+                words.add(line);
             }
-            addWord("Hello");
+            br.close();
         }catch (Exception ex){
             ex.printStackTrace();
         }
+        return words;
     }
 }
