@@ -40,6 +40,7 @@ public class Main {
 //        }
 
         Lyrics l = new Lyrics();
+        Stopwords st = new Stopwords();
         ArrayList<SongLyrics> dataSet = l.buildDataSet();
         for(SongLyrics song: dataSet){
             String mood = song.getMood();
@@ -56,13 +57,13 @@ public class Main {
                     song.getMood().equalsIgnoreCase("G17") || song.getMood().equalsIgnoreCase("G31")) quadrant = "v-a-";
             song.setQuadrant(quadrant);
 
+
+            System.out.println(st.removeWords(song.getLyrics()));
+
         }
 
-        Stopwords st = new Stopwords();
-        ArrayList<String> list = st.loadWords("C:\\Users\\Aaron\\Documents\\Final Year\\FinalYearProject\\Music-Mood-Classification\\Stopwords.txt");
-        for(String s: list){
-            System.out.println(s);
-        }
+
+
 
 
 

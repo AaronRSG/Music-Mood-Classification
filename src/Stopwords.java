@@ -21,8 +21,19 @@ public class Stopwords {
 
     public boolean isStopWord(String word){
         ArrayList<String> stopWords = loadWords("C:\\Users\\Aaron\\Documents\\Final Year\\FinalYearProject\\Music-Mood-Classification\\Stopwords.txt");
-        if(stopWords.contains(word)) return true;
+        if(stopWords.contains(word.toLowerCase())) return true;
         else return false;
     }
-
+    public String removeWords(String lyrics){
+        String result = "";
+        String[] words = lyrics.split("\\s+");
+        for(String w: words){
+            if(isStopWord(w) || w.isEmpty()){
+                continue;
+            }else {
+                result += w + " ";
+            }
+        }
+        return result;
+    }
 }
