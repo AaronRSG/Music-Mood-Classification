@@ -18,4 +18,11 @@ public class Stopwords {
         }
         return words;
     }
+
+    public boolean isStopWord(String word){
+        ArrayList<String> stopWords = loadWords("C:\\Users\\Aaron\\Documents\\Final Year\\FinalYearProject\\Music-Mood-Classification\\Stopwords.txt");
+        if(stopWords.contains(word)) return true;
+        else return false;
+    }
+
 }

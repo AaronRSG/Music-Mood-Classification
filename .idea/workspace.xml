@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44514a77-27a8-487e-bbb0-09c6672f6e4b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LyricProcessing.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Stopwords.java" afterPath="$PROJECT_DIR$/src/Stopwords.java" />
@@ -65,7 +66,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="8" selection-start="3337" selection-end="3337" vertical-scroll-proportion="0.0">
+            <state line="64" column="9" selection-start="3592" selection-end="3592" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -74,11 +75,20 @@
       <file leaf-file-name="Stopwords.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Stopwords.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="5" selection-start="590" selection-end="590" vertical-scroll-proportion="0.6421471">
+            <state line="26" column="0" selection-start="871" selection-end="871" vertical-scroll-proportion="0.72962224">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#241#249#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LyricProcessing.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LyricProcessing.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,6 +116,7 @@
         <option value="$PROJECT_DIR$/src/SongLyrics.java" />
         <option value="$PROJECT_DIR$/Stopwords.txt" />
         <option value="$PROJECT_DIR$/src/Stemmer.java" />
+        <option value="$PROJECT_DIR$/src/LyricProcessing.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Stopwords.java" />
       </list>
@@ -465,7 +476,11 @@
       <created>1446633818625</created>
       <updated>1446633818625</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Fixed Stopwords - Store words in ArrayList">
+      <created>1446636547927</created>
+      <updated>1446636547927</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -531,7 +546,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Stemmer - Porter stemming algorithm implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Stopwords - Store words in ArrayList" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -564,6 +579,7 @@
     <MESSAGE value="Added quadrant granularity" />
     <MESSAGE value="Added File with stop words from rank.nl" />
     <MESSAGE value="Added Stemmer - Porter stemming algorithm implementation" />
+    <MESSAGE value="Fixed Stopwords - Store words in ArrayList" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -636,16 +652,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/LyricProcessing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="8" selection-start="3337" selection-end="3337" vertical-scroll-proportion="0.0">
+        <state line="64" column="9" selection-start="3592" selection-end="3592" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Stopwords.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="590" selection-end="590" vertical-scroll-proportion="0.6421471">
+        <state line="26" column="0" selection-start="871" selection-end="871" vertical-scroll-proportion="0.72962224">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#241#249#0" expanded="true" />
