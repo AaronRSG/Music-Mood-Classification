@@ -60,6 +60,8 @@ public class Main {
 
         }
 
+        ArrayList<Stopwords> st = new ArrayList<Stopwords>();
+
 //        Lyrics l = new Lyrics();
 //        ArrayList<SongLyrics> lyrics = l.getFullLyrics();
 //        for (SongLyrics sl: lyrics){
