@@ -37,6 +37,9 @@ public class SongLyrics {
     public String getLyrics(){
         return lyrics;
     }
+    public void setLyrics(String l){
+        this.lyrics = l;
+    }
     public String getQuadrant(){
         return quadrant;
     }

@@ -45,6 +45,7 @@ public class Main {
         for(SongLyrics song: dataSet){
             String mood = song.getMood();
             String quadrant = song.getQuadrant();
+            String lyrics = song.getLyrics();
             if(mood.equalsIgnoreCase("G1") || mood.equalsIgnoreCase("G2") ||
                     mood.equalsIgnoreCase("G5") || mood.equalsIgnoreCase("G6") ||
                     mood.equalsIgnoreCase("G7") || mood.equalsIgnoreCase("G9")) quadrant = "v+a+";
@@ -56,8 +57,8 @@ public class Main {
             if(mood.equalsIgnoreCase("G15") || mood.equalsIgnoreCase("G16") ||
                     mood.equalsIgnoreCase("G17") || mood.equalsIgnoreCase("G31")) quadrant = "v-a-";
             song.setQuadrant(quadrant);
-
-            System.out.println(st.removeWords(song.getLyrics()));
+            song.setLyrics(st.removeWords(lyrics));
+            System.out.println(song.getLyrics());
         }
 
 

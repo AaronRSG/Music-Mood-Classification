@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="44514a77-27a8-487e-bbb0-09c6672f6e4b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Stopwords.txt" afterPath="$PROJECT_DIR$/Stopwords.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SongLyrics.java" afterPath="$PROJECT_DIR$/src/SongLyrics.java" />
     </list>
     <ignored path="Music-Mood-Classification.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,7 +66,16 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="12" selection-start="3177" selection-end="3177" vertical-scroll-proportion="0.6588869">
+            <state line="60" column="47" selection-start="3322" selection-end="3322" vertical-scroll-proportion="0.7199282">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SongLyrics.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SongLyrics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="23" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,12 +122,12 @@
         <option value="$PROJECT_DIR$/src/Tags.java" />
         <option value="$PROJECT_DIR$/src/Features.java" />
         <option value="$PROJECT_DIR$/src/Lyrics.java" />
-        <option value="$PROJECT_DIR$/src/SongLyrics.java" />
-        <option value="$PROJECT_DIR$/Stopwords.txt" />
         <option value="$PROJECT_DIR$/src/Stemmer.java" />
         <option value="$PROJECT_DIR$/src/LyricProcessing.java" />
         <option value="$PROJECT_DIR$/src/Stopwords.java" />
+        <option value="$PROJECT_DIR$/src/SongLyrics.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/Stopwords.txt" />
       </list>
     </option>
   </component>
@@ -488,7 +499,11 @@
       <created>1446638884307</created>
       <updated>1446638884307</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Small Fixes">
+      <created>1446639103787</created>
+      <updated>1446639103787</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -509,8 +524,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14806378" sideWeight="0.25684932" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7431507" sideWeight="0.4969651" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14806378" sideWeight="0.55136985" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44863012" sideWeight="0.4969651" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -554,7 +569,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added removeWords() - remove stopwords from lyrics and print out new processed lyrics" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small Fixes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -590,6 +605,7 @@
     <MESSAGE value="Fixed Stopwords - Store words in ArrayList" />
     <MESSAGE value="Added isStopWord() - check if word is contained in the stop word list" />
     <MESSAGE value="Added removeWords() - remove stopwords from lyrics and print out new processed lyrics" />
+    <MESSAGE value="Small Fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -612,11 +628,6 @@
     <entry file="file://$PROJECT_DIR$/src/SongFeatures.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="116" column="45" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.71875" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SongLyrics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="47" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lyrics.java">
@@ -662,13 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Stopwords.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="3" selection-start="892" selection-end="895" vertical-scroll-proportion="0.491453">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stopwords.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="34" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.0">
@@ -679,9 +683,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Stopwords.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="174" column="25" selection-start="960" selection-end="960" vertical-scroll-proportion="4.1202874">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SongLyrics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="23" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="12" selection-start="3177" selection-end="3177" vertical-scroll-proportion="0.6588869">
+        <state line="60" column="47" selection-start="3322" selection-end="3322" vertical-scroll-proportion="0.7199282">
           <folding />
         </state>
       </provider>
