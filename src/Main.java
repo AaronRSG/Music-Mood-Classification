@@ -57,10 +57,13 @@ public class Main {
             if(mood.equalsIgnoreCase("G15") || mood.equalsIgnoreCase("G16") ||
                     mood.equalsIgnoreCase("G17") || mood.equalsIgnoreCase("G31")) quadrant = "v-a-";
             song.setQuadrant(quadrant);
-            song.setLyrics(st.removeWords(lyrics));
+            String LyricTagsRemoved = st.removeLyricTags(lyrics);
+            String PunctuationRemoved = LyricTagsRemoved.replaceAll("\\p{Punct}+", "");
+            String StopWordsRemoved = st.removeWords(PunctuationRemoved);
+            String stemmed = st.stemWords(StopWordsRemoved);
+            song.setLyrics(stemmed);
             System.out.println(song.getLyrics());
         }
-
 
 
 

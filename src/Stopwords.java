@@ -36,4 +36,33 @@ public class Stopwords {
         }
         return result;
     }
+    public String removeLyricTags(String lyrics){
+        String result = "";
+        String words[] = lyrics.split("\\s+");
+        for(String w: words){
+            if(w.contains("<") && w.contains(">")) continue;
+            if(w.contains("[") && w.contains("]")) continue;
+            if(w.contains("2x") || w.contains("x2")) continue;
+            else result += w + " ";
+        }
+        return result;
+    }
+
+    public String stemWords(String lyrics){
+        String result = "";
+        String[] words = lyrics.split("\\s+");
+        Stemmer stemmer = new Stemmer();
+        char[] char_arry;
+        for(int i = 0; i < lyrics.length(); i++){
+            for(String w: words){
+                char_arry = w.toLowerCase().toCharArray();
+                for (int j = 0; j < char_arry.length; j++){
+                    stemmer.add(char_arry[j]);
+                }
+                stemmer.stem();
+                result = stemmer.toString();
+            }
+        }
+        return result;
+    }
 }
