@@ -25,7 +25,7 @@ public class LyricProcessing {
             String StopWordsRemoved = st.removeWords(PunctuationRemoved);
             String stemmed = st.stemWords(StopWordsRemoved);
             song.setLyrics(stemmed);
-            System.out.println(song.getLyrics());
+//            System.out.println(song.getLyrics());
         }
         return dataSet;
     }

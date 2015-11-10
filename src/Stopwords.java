@@ -43,6 +43,7 @@ public class Stopwords {
             if(w.contains("<") && w.contains(">")) continue;
             if(w.contains("[") && w.contains("]")) continue;
             if(w.contains("2x") || w.contains("x2")) continue;
+            if(w.contains("3x") || w.contains("x3")) continue;
             else result += w + " ";
         }
         return result;
