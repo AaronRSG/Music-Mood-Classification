@@ -1,6 +1,7 @@
 import com.echonest.api.v4.EchoNestException;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String args[]){
@@ -43,7 +44,20 @@ public class Main {
         ArrayList<SongLyrics> lyrics = lp.ProcessLyrics();
 
 
-
+//        List<String> classVal = new ArrayList<String>();
+//        for(SongLyrics sl: lyrics){
+//            String quadrant = sl.getQuadrant();
+//            if(!classVal.contains(quadrant)) classVal.add(quadrant);
+//        }
+//
+//        for(String q: classVal){
+//            System.out.println(q);
+//        }
+//        try {
+//            lp.createBinaryClassification("MyClassifier.arff", lyrics, classVal);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
 
 
 //        Lyrics l = new Lyrics();

@@ -54,15 +54,14 @@ public class Stopwords {
         String[] words = lyrics.split("\\s+");
         Stemmer stemmer = new Stemmer();
         char[] char_arry;
-        for(int i = 0; i < lyrics.length(); i++){
-            for(String w: words){
-                char_arry = w.toLowerCase().toCharArray();
-                for (int j = 0; j < char_arry.length; j++){
-                    stemmer.add(char_arry[j]);
-                }
-                stemmer.stem();
-                result = stemmer.toString();
+
+        for(String w: words){
+            char_arry = w.toLowerCase().toCharArray();
+            for (int j = 0; j < char_arry.length; j++){
+                stemmer.add(char_arry[j]);
             }
+            stemmer.stem();
+            result += " " + stemmer.toString();
         }
         return result;
     }

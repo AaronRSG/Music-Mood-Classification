@@ -1,4 +1,16 @@
+import weka.core.Attribute;
+import weka.core.FastVector;
+import weka.core.Instances;
+import weka.core.converters.ArffSaver;
+import weka.filters.Filter;
+import weka.filters.unsupervised.attribute.Reorder;
+
+import java.io.File;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+import java.io.PrintWriter;
 
 public class LyricProcessing {
     public ArrayList<SongLyrics> ProcessLyrics(){
@@ -29,5 +41,58 @@ public class LyricProcessing {
         }
         return dataSet;
     }
+    public ArrayList<String> orderLyricWords(ArrayList<SongLyrics> songs){
+        ArrayList<String> results = new ArrayList<String>();
+        for(SongLyrics song: songs){
+            String lyrics = song.getLyrics();
+            results.add(lyrics);
+        }
+        Collections.sort(results);
+        for (int i =0; i < results.size();i++){
+            System.out.println(results.get(i));
+        }
+        return results;
+
+    }
+
+    public void createBinaryClassification(){
+        FastVector atts = new FastVector();
+        List<Instances> instances = new ArrayList<Instances>();
+    }
+
+//    public void createBinaryClassification(String filename, ArrayList<SongLyrics> songs, List<String> classVal) throws Exception{
+//        int nclasses = classVal.size();
+//        ArrayList<Attribute> atts = new ArrayList<Attribute>(27+nclasses);
+//        List<String> valuesx = new ArrayList<String>();
+//        valuesx.add("1");
+//        valuesx.add("0");
+//        for(int x = 0;x < nclasses; x++){
+//            atts.add(new Attribute("@"+classVal.get(x), valuesx));
+//        }
+//        atts.add(new Attribute("lyrics", (ArrayList<String>)null));
+//        Instances data = new Instances("TestInstances", atts, 0);
+//
+//        for(SongLyrics sl : songs){
+//            double[] instanceValue1 = new double[data.numAttributes()];
+//            for (int x = 0; x < nclasses; x++){
+//                if(x != classVal.indexOf(sl.getQuadrant())) instanceValue1[x] = 1;
+//                else instanceValue1[classVal.indexOf(sl.getQuadrant())] = 0;
+//            }
+//            String lyrics = sl.getLyrics();
+//            instanceValue1[nclasses] = data.attribute(nclasses).addStringValue(lyrics);
+//            data.add(new DenseInstance(1.0, instanceValue1));
+//        }
+//        Reorder reorder = new Reorder();
+//        reorder.setAttributeIndices("2,1,3-last");
+//        reorder.setInputFormat(data);
+//        Instances newData = Filter.useFilter(data, reorder);
+//
+//        // save in ARFF file
+//        ArffSaver saver = new ArffSaver();
+//        saver.setInstances(newData);
+//        saver.setFile(new File("./"+filename));
+//        saver.setDestination(new File("./"+filename));
+//        saver.writeBatch();
+//    }
 
 }
