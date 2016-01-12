@@ -1,7 +1,6 @@
 import com.echonest.api.v4.EchoNestException;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String args[]){
@@ -42,6 +41,21 @@ public class Main {
 
         LyricProcessing lp = new LyricProcessing();
         ArrayList<SongLyrics> lyrics = lp.ProcessLyrics();
+        ArrayList<String> lyricTerms = new ArrayList<String>();
+        for(SongLyrics song: lyrics){
+            for(String term: song.getLyrics().split(" ")){
+                lyricTerms.add(term);
+            }
+        }
+        Set<String> s = new HashSet<String>();
+        s.addAll(lyricTerms);
+        lyricTerms.clear();
+        lyricTerms.addAll(s);
+        Collections.sort(lyricTerms, String.CASE_INSENSITIVE_ORDER);
+        for(String t: lyricTerms){
+            System.out.println(t);
+        }
+
 
 
 //        List<String> classVal = new ArrayList<String>();
