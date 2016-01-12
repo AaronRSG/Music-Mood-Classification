@@ -6,10 +6,7 @@ import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.Reorder;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.io.PrintWriter;
 
 public class LyricProcessing {
@@ -41,17 +38,19 @@ public class LyricProcessing {
         }
         return dataSet;
     }
-    public ArrayList<String> orderLyricWords(ArrayList<SongLyrics> songs){
-        ArrayList<String> results = new ArrayList<String>();
+    public ArrayList<String> gatherLyricTerms(ArrayList<SongLyrics> songs){
+        ArrayList<String> terms = new ArrayList<String>();
         for(SongLyrics song: songs){
-            String lyrics = song.getLyrics();
-            results.add(lyrics);
+            for(String term: song.getLyrics().split(" ")){
+                terms.add(term);
+            }
         }
-        Collections.sort(results);
-        for (int i =0; i < results.size();i++){
-            System.out.println(results.get(i));
-        }
-        return results;
+        Set<String> uniqueTerms = new HashSet<String>();
+        uniqueTerms.addAll(terms);
+        terms.clear();
+        terms.addAll(uniqueTerms);
+        Collections.sort(terms, String.CASE_INSENSITIVE_ORDER);
+        return terms;
 
     }
 

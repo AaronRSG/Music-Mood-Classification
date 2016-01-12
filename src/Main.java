@@ -41,21 +41,10 @@ public class Main {
 
         LyricProcessing lp = new LyricProcessing();
         ArrayList<SongLyrics> lyrics = lp.ProcessLyrics();
-        ArrayList<String> lyricTerms = new ArrayList<String>();
-        for(SongLyrics song: lyrics){
-            for(String term: song.getLyrics().split(" ")){
-                lyricTerms.add(term);
-            }
-        }
-        Set<String> s = new HashSet<String>();
-        s.addAll(lyricTerms);
-        lyricTerms.clear();
-        lyricTerms.addAll(s);
-        Collections.sort(lyricTerms, String.CASE_INSENSITIVE_ORDER);
-        for(String t: lyricTerms){
+        ArrayList<String> lyricTerms = lp.gatherLyricTerms(lyrics);
+        for (String t: lyricTerms){
             System.out.println(t);
         }
-
 
 
 //        List<String> classVal = new ArrayList<String>();
