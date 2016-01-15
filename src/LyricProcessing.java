@@ -1,5 +1,6 @@
 import weka.core.Attribute;
 import weka.core.FastVector;
+import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;
 import weka.filters.Filter;
@@ -51,47 +52,36 @@ public class LyricProcessing {
         terms.addAll(uniqueTerms);
         Collections.sort(terms, String.CASE_INSENSITIVE_ORDER);
         return terms;
-
     }
 
-    public void createBinaryClassification(){
-        FastVector atts = new FastVector();
-        List<Instances> instances = new ArrayList<Instances>();
-    }
+    public void docClassification(ArrayList<SongLyrics> songs) throws Exception{
+        FastVector fvClassVal = new FastVector(2);
+        int i = 0;
+        double[] values;
 
-//    public void createBinaryClassification(String filename, ArrayList<SongLyrics> songs, List<String> classVal) throws Exception{
-//        int nclasses = classVal.size();
-//        ArrayList<Attribute> atts = new ArrayList<Attribute>(27+nclasses);
-//        List<String> valuesx = new ArrayList<String>();
-//        valuesx.add("1");
-//        valuesx.add("0");
-//        for(int x = 0;x < nclasses; x++){
-//            atts.add(new Attribute("@"+classVal.get(x), valuesx));
-//        }
-//        atts.add(new Attribute("lyrics", (ArrayList<String>)null));
-//        Instances data = new Instances("TestInstances", atts, 0);
-//
-//        for(SongLyrics sl : songs){
-//            double[] instanceValue1 = new double[data.numAttributes()];
-//            for (int x = 0; x < nclasses; x++){
-//                if(x != classVal.indexOf(sl.getQuadrant())) instanceValue1[x] = 1;
-//                else instanceValue1[classVal.indexOf(sl.getQuadrant())] = 0;
-//            }
-//            String lyrics = sl.getLyrics();
-//            instanceValue1[nclasses] = data.attribute(nclasses).addStringValue(lyrics);
-//            data.add(new DenseInstance(1.0, instanceValue1));
-//        }
-//        Reorder reorder = new Reorder();
-//        reorder.setAttributeIndices("2,1,3-last");
-//        reorder.setInputFormat(data);
-//        Instances newData = Filter.useFilter(data, reorder);
-//
-//        // save in ARFF file
-//        ArffSaver saver = new ArffSaver();
-//        saver.setInstances(newData);
-//        saver.setFile(new File("./"+filename));
-//        saver.setDestination(new File("./"+filename));
-//        saver.writeBatch();
-//    }
+        Attribute attribute = new Attribute("Document", (FastVector) null);
+
+        fvClassVal.addElement("pos");
+        fvClassVal.addElement("neg");
+        Attribute ClassAtt = new Attribute("class", fvClassVal);
+
+        FastVector fvWekaAttributes = new FastVector(2);
+        fvWekaAttributes.addElement(attribute);
+        fvWekaAttributes.addElement(ClassAtt);
+
+        Instances ts = new Instances("MyRel", fvWekaAttributes, 1);
+        ts.setClassIndex(1);
+
+        for (SongLyrics song: songs){
+            values = new double[ts.numAttributes()];
+            values[0] = ts.attribute(0).addStringValue(song.getLyrics());
+            ts.add(new Instance(1.0, values));
+        }
+
+        ArffSaver as = new ArffSaver();
+        as.setInstances(ts);
+        as.setFile(new File("myDocTest.arff"));
+        as.writeBatch();
+    }
 
 }

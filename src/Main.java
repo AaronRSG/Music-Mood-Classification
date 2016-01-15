@@ -41,10 +41,17 @@ public class Main {
 
         LyricProcessing lp = new LyricProcessing();
         ArrayList<SongLyrics> lyrics = lp.ProcessLyrics();
-        ArrayList<String> lyricTerms = lp.gatherLyricTerms(lyrics);
-        for (String t: lyricTerms){
-            System.out.println(t);
+//        ArrayList<String> lyricTerms = lp.gatherLyricTerms(lyrics);
+//        for (String t: lyricTerms){
+//            System.out.println(t);
+//        }
+        try{
+            lp.docClassification(lyrics);
+        }catch (Exception e){
+            e.printStackTrace();
         }
+
+
 
 
 //        List<String> classVal = new ArrayList<String>();
