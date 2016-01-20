@@ -46,7 +46,7 @@ public class Main {
 //            System.out.println(t);
 //        }
         try{
-            lp.docClassification(lyrics);
+            lp.docClassification(lyrics, "v+a+");
         }catch (Exception e){
             e.printStackTrace();
         }

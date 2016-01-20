@@ -54,20 +54,20 @@ public class LyricProcessing {
         return terms;
     }
 
-    public void docClassification(ArrayList<SongLyrics> songs) throws Exception{
+    public void docClassification(ArrayList<SongLyrics> songs, String quadrant) throws Exception{
         FastVector fvClassVal = new FastVector(2);
         int i = 0;
         double[] values;
 
         Attribute attribute = new Attribute("Document", (FastVector) null);
 
-        fvClassVal.addElement("pos");
-        fvClassVal.addElement("neg");
-        Attribute ClassAtt = new Attribute("class", fvClassVal);
+        fvClassVal.addElement("positive");
+        fvClassVal.addElement("negative");
+        Attribute classAttribute = new Attribute("@@class@@", fvClassVal);
 
         FastVector fvWekaAttributes = new FastVector(2);
         fvWekaAttributes.addElement(attribute);
-        fvWekaAttributes.addElement(ClassAtt);
+        fvWekaAttributes.addElement(classAttribute);
 
         Instances ts = new Instances("MyRel", fvWekaAttributes, 1);
         ts.setClassIndex(1);
@@ -75,7 +75,12 @@ public class LyricProcessing {
         for (SongLyrics song: songs){
             values = new double[ts.numAttributes()];
             values[0] = ts.attribute(0).addStringValue(song.getLyrics());
-            ts.add(new Instance(1.0, values));
+            if(song.getQuadrant().equals(quadrant))
+                values[1] = ts.attribute(1).indexOfValue("positive");
+            else
+                values[1] = ts.attribute(1).indexOfValue("negative");
+
+            ts.add(new Instance(1.0, values ));
         }
 
         ArffSaver as = new ArffSaver();
