@@ -85,7 +85,7 @@ public class LyricProcessing {
 
         ArffSaver as = new ArffSaver();
         as.setInstances(ts);
-        as.setFile(new File("myDocTest.arff"));
+        as.setFile(new File("VplusAplusTest.arff"));
         as.writeBatch();
     }
 

@@ -73,13 +73,13 @@ public class Lyrics {
 
     public ArrayList<SongLyrics> buildDataSet(){
         ArrayList<SongLyrics> q1 = getFullLyrics("SELECT * FROM full_lyrics_view WHERE mood IN (\'G1\'," +
-                                                "\'G2\', \'G5\', \'G6\', \'G7\', \'G9\') ORDER BY RANDOM() LIMIT 300"); // quadrant - v+a+
+                                                "\'G2\', \'G5\', \'G6\', \'G7\', \'G9\') ORDER BY RANDOM() LIMIT 200"); // quadrant - v+a+
         ArrayList<SongLyrics> q2 = getFullLyrics("SELECT * FROM full_lyrics_view WHERE mood IN (\'G8\', " +
-                                                "\'G11\', \'G12\', \'G14\', \'G32\') ORDER BY RANDOM() LIMIT 100"); // quadrant - v+a-
+                                                "\'G11\', \'G12\', \'G14\', \'G32\') ORDER BY RANDOM() LIMIT 0"); // quadrant - v+a-
         ArrayList<SongLyrics> q3 = getFullLyrics("SELECT * FROM full_lyrics_view WHERE mood IN (\'G25\', " +
-                                                "\'G28\', \'G29\') ORDER BY RANDOM() LIMIT 100"); // quadrant v-a+
+                                                "\'G28\', \'G29\') ORDER BY RANDOM() LIMIT 0"); // quadrant v-a+
         ArrayList<SongLyrics> q4 = getFullLyrics("SELECT * FROM full_lyrics_view WHERE mood IN (\'G15\'," +
-                                                "\'G16\', \'G17\', \'G31\') ORDER BY RANDOM() LIMIT 100"); //quadrant v-a-
+                                                "\'G16\', \'G17\', \'G31\') ORDER BY RANDOM() LIMIT 0"); //quadrant v-a-
 
         ArrayList<SongLyrics> dataSet = new ArrayList<SongLyrics>();
         dataSet.addAll(q1);
