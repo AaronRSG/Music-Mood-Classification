@@ -4,8 +4,6 @@
     <list default="true" id="44514a77-27a8-487e-bbb0-09c6672f6e4b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Features.java" afterPath="$PROJECT_DIR$/src/Features.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LyricProcessing.java" afterPath="$PROJECT_DIR$/src/LyricProcessing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lyrics.java" afterPath="$PROJECT_DIR$/src/Lyrics.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="Music-Mood-Classification.iws" />
@@ -601,7 +599,11 @@
       <created>1453319601926</created>
       <updated>1453319601926</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Small Fixes">
+      <created>1455103201658</created>
+      <updated>1455103201658</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -667,7 +669,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Method docClassification - Correctly identify class attribute for each instance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small Fixes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -695,7 +697,6 @@
     <MESSAGE value="Fixed Stopwords - Store words in ArrayList" />
     <MESSAGE value="Added isStopWord() - check if word is contained in the stop word list" />
     <MESSAGE value="Added removeWords() - remove stopwords from lyrics and print out new processed lyrics" />
-    <MESSAGE value="Small Fixes" />
     <MESSAGE value="Added setLyrics() - Change lyrics after pre-processing" />
     <MESSAGE value="Added removeLyricTags() and stemWords() - For lyric pre-processing" />
     <MESSAGE value="Added ProcessLyrics() - Allows all processing to be carried out in a single function" />
@@ -705,6 +706,7 @@
     <MESSAGE value="Added Method to Gather and Order Lyric Terms" />
     <MESSAGE value="Added Method docClassification - Writes data to .arff file for processing in Weka" />
     <MESSAGE value="Fixed Method docClassification - Correctly identify class attribute for each instance" />
+    <MESSAGE value="Small Fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

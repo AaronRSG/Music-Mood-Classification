@@ -26,30 +26,50 @@ public class Main {
 //        DataSetInfo dsi = new DataSetInfo();
 //        dsi.createTable(dbFeatures, FeatureTable);
 
+//        *******************************Features*****************************************
+
 //        Lyrics l = new Lyrics();
 //        ArrayList<SongDetails> details = l.getDetails();
 //        try{
 //            Features f = new Features();
-//            for(SongDetails sd :details.subList(2315,9999)){
+//            for(SongDetails sd :details.subList(2943,details.size())){
 //                f.getFeaturesToAdd(sd.getArtist(), sd.getTitle(), 1);
 //                System.out.println("Successfully added " + sd.toString() + "\n");
 //            }
 //        }catch (EchoNestException ex){
-//            ex.printStackTrace();
-//
+//            //Do Nothing. Invalid entries not entered.
 //        }
+        ArrayList<SongFeatures> features;
+        try {
+            Features f = new Features();
+            features = f.getFeatures();
+            int i = 0;
 
-        LyricProcessing lp = new LyricProcessing();
-        ArrayList<SongLyrics> lyrics = lp.ProcessLyrics();
+            f.featureARFF(features);
+//            for(SongFeatures sf : features){
+//                i++;
+//                System.out.println(sf.toString());
+//            }
+//            System.out.println(i);
+        } catch (EchoNestException ex) {
+            ex.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+//        ***********************Lyrics**************************************
+//
+//        LyricProcessing lp = new LyricProcessing();
+//        ArrayList<SongLyrics> lyrics = lp.ProcessLyrics();
 //        ArrayList<String> lyricTerms = lp.gatherLyricTerms(lyrics);
 //        for (String t: lyricTerms){
 //            System.out.println(t);
 //        }
-        try{
-            lp.docClassification(lyrics, "v+a+");
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+
+//        try{
+//            lp.docClassification(lyrics, "v+a+");
+//        }catch (Exception e){
+//            e.printStackTrace();
+//        }
 
 
 
@@ -76,17 +96,6 @@ public class Main {
 //            System.out.println(sl.toString());
 //        }
 
-//        ArrayList<SongFeatures> features;
-//        try {
-//            Features f = new Features();
-//            features = f.getFeatures();
-//
-//            for(SongFeatures sf : features){
-//                System.out.println(sf.toString());
-//            }
-//        } catch (EchoNestException ex) {
-//            ex.printStackTrace();
-//        }
 //        l.getLyrics();
 //        l.getFullLyrics();
 

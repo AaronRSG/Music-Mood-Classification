@@ -1,5 +1,11 @@
 import com.echonest.api.v4.*;
+import weka.core.Attribute;
+import weka.core.FastVector;
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.converters.ArffSaver;
 
+import java.io.File;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -101,5 +107,59 @@ public class Features {
             ex.printStackTrace();
         }
         return features;
+    }
+    public void featureARFF(ArrayList<SongFeatures> features) throws Exception{
+        FastVector fvClassVal = new FastVector(2);
+        FastVector fvWekaAttributes = new FastVector(14);
+        int i = 0;
+        double[] values;
+
+        fvClassVal.addElement("positive");
+        fvClassVal.addElement("negative");
+        Attribute classAttribute = new Attribute("@@class@@", fvClassVal);
+
+        fvWekaAttributes.addElement(new Attribute("duration"));
+        fvWekaAttributes.addElement(new Attribute("danceability"));
+        fvWekaAttributes.addElement(new Attribute("end_of_fade_in"));
+        fvWekaAttributes.addElement(new Attribute("energy"));
+        fvWekaAttributes.addElement(new Attribute("key"));
+        fvWekaAttributes.addElement(new Attribute("key_confidence"));
+        fvWekaAttributes.addElement(new Attribute("loudness"));
+        fvWekaAttributes.addElement(new Attribute("mode"));
+        fvWekaAttributes.addElement(new Attribute("mode_confidence"));
+        fvWekaAttributes.addElement(new Attribute("song_hotness"));
+        fvWekaAttributes.addElement(new Attribute("start_of_fade_out"));
+        fvWekaAttributes.addElement(new Attribute("tempo"));
+        fvWekaAttributes.addElement(new Attribute("time_signature"));
+        fvWekaAttributes.addElement(classAttribute);
+
+        Instances ts = new Instances("MyRel", fvWekaAttributes, 14);
+        ts.setClassIndex(13);
+
+        for(SongFeatures song: features){
+            values = new double[ts.numAttributes()];
+
+            values[0] = song.getDuration();
+            values[1] = song.getDanceability();
+            values[2] = song.getEnd_of_fade_in();
+            values[3] = song.getEnergy();
+            values[4] = song.getKey();
+            values[5] = song.getKey_confidence();
+            values[6] = song.getLoudness();
+            values[7] = song.getMode();
+            values[8] = song.getMode_confidence();
+            values[9] = song.getSong_hotness();
+            values[10] = song.getStart_of_fade_out();
+            values[11] = song.getTempo();
+            values[12] = song.getTime_signature();
+
+            ts.add(new Instance(1.0, values));
+        }
+
+        System.out.println(ts);
+        ArffSaver as = new ArffSaver();
+        as.setInstances(ts);
+        as.setFile(new File("feature.arff"));
+        as.writeBatch();
     }
 }
