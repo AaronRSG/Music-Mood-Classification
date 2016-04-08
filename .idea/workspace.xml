@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44514a77-27a8-487e-bbb0-09c6672f6e4b" name="Default" comment="">
+    <list default="true" id="44514a77-27a8-487e-bbb0-09c6672f6e4b" name="Default" comment="Added featureARFF - Create Arff file of audio features (FIX NEEDED)">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BuildLyrics.java" />
+      <change type="DELETED" beforePath="C:\Users\Aaron\Documents\Final Year\FinalYearProject\Music-Mood-Classification\Stopwords.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Aaron\Documents\Final Year\FinalYearProject\Music-Mood-Classification\src\Lyrics.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Aaron\Documents\Final Year\FinalYearProject\Music-Mood-Classification\src\SongDetails.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Aaron\Documents\Final Year\FinalYearProject\Music-Mood-Classification\src\Tags.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Features.java" afterPath="$PROJECT_DIR$/src/Features.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LyricProcessing.java" afterPath="$PROJECT_DIR$/src/LyricProcessing.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Stopwords.java" afterPath="$PROJECT_DIR$/src/Stopwords.java" />
     </list>
     <ignored path="Music-Mood-Classification.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,115 +68,91 @@
     <favorites_list name="Music-Mood-Classification" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="Stopwords.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Stopwords.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="58" column="36" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SongLyrics.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/SongLyrics.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="13" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="56" column="34" selection-start="2682" selection-end="2682" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SongFeatures.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/SongFeatures.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="116" column="45" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DataSetInfo.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/DataSetInfo.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="13" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LyricProcessing.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/LyricProcessing.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="79" column="144" selection-start="3490" selection-end="3490" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Stemmer.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Stemmer.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="62" column="16" selection-start="1590" selection-end="1590" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Lyrics.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Lyrics.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="75" column="114" selection-start="3341" selection-end="3341" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Features.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Features.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="136" column="27" selection-start="6034" selection-end="6034" vertical-scroll-proportion="0.1532567">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="LyricProcessing.java" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/LyricProcessing.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="65" column="23" selection-start="2877" selection-end="2877" vertical-scroll-proportion="0.18014705">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Features.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Features.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="158" column="29" selection-start="6825" selection-end="6825" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="SongLyrics.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SongLyrics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="18" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stemmer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Stemmer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="16" selection-start="1590" selection-end="1590" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="75" column="71" selection-start="4843" selection-end="4843" vertical-scroll-proportion="2.2375479">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stopwords.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Stopwords.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="19" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SongFeatures.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SongFeatures.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="116" column="45" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataSetInfo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataSetInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="21" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LyricProcessing.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LyricProcessing.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="12" selection-start="2007" selection-end="2007" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BuildLyrics.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BuildLyrics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="66" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Features.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Features.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="57" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -190,11 +173,12 @@
         <option value="$PROJECT_DIR$/src/Stemmer.java" />
         <option value="$PROJECT_DIR$/src/SongLyrics.java" />
         <option value="$PROJECT_DIR$/Stopwords.txt" />
-        <option value="$PROJECT_DIR$/src/Stopwords.java" />
-        <option value="$PROJECT_DIR$/src/Lyrics.java" />
         <option value="$PROJECT_DIR$/src/LyricProcessing.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Stopwords.java" />
         <option value="$PROJECT_DIR$/src/Features.java" />
+        <option value="$PROJECT_DIR$/src/Lyrics.java" />
+        <option value="$PROJECT_DIR$/src/BuildLyrics.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -273,6 +257,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Music-Mood-Classification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Music-Mood-Classification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -293,6 +291,13 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aaron\Documents\Final Year\FinalYearProject\Music-Mood-Classification" />
+      <recent name="C:\Users\Aaron\Documents\Final Year\FinalYearProject\Music-Mood-Classification\src\Resources" />
+      <recent name="C:\Users\Aaron\Documents\Final Year\FinalYearProject\Music-Mood-Classification\src" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
@@ -603,7 +608,11 @@
       <created>1455103201658</created>
       <updated>1455103201658</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Added featureARFF - Create Arff file of audio features (FIX NEEDED)">
+      <created>1455103274484</created>
+      <updated>1455103274484</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -613,6 +622,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49315068" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989726" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45034248" sideWeight="0.49772382" order="7" side_tool="true" content_ui="tabs" />
@@ -623,11 +633,10 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3135915" sideWeight="0.55479455" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44520548" sideWeight="0.4969651" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3135915" sideWeight="0.5068493" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989726" sideWeight="0.4969651" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -669,7 +678,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added featureARFF - Create Arff file of audio features (FIX NEEDED)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -682,7 +691,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Added insertFeatures() - Adds song feature details to database" />
     <MESSAGE value="Created SongDetails Object for artist name and title" />
     <MESSAGE value="Added getDetails() - Creates SongDetails object out of songs retrieved from million song subset" />
     <MESSAGE value="Added SongFeatures Object to handle feature values retrieved from sqlite database" />
@@ -707,6 +715,7 @@
     <MESSAGE value="Added Method docClassification - Writes data to .arff file for processing in Weka" />
     <MESSAGE value="Fixed Method docClassification - Correctly identify class attribute for each instance" />
     <MESSAGE value="Small Fixes" />
+    <MESSAGE value="Added featureARFF - Create Arff file of audio features (FIX NEEDED)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -716,48 +725,43 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../jEN-latest/jEN-4.x.t/jEN.jar!/com/echonest/api/v4/SongParams.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="16" selection-start="1253" selection-end="1253" vertical-scroll-proportion="0.36431226" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../jEN-latest/jEN-4.x.t/jEN.jar!/com/echonest/api/v4/Song.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="0" selection-start="4244" selection-end="4244" vertical-scroll-proportion="0.71375465" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tags.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="42" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SongDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="16" selection-start="544" selection-end="544" vertical-scroll-proportion="0.6642729" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Stopwords.txt">
+    <entry file="file://$PROJECT_DIR$/Resources/Stopwords.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="174" column="25" selection-start="960" selection-end="960" vertical-scroll-proportion="4.1202874" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stopwords.java">
+    <entry file="jar://$PROJECT_DIR$/../jEN-latest/jEN-4.x.t/jEN.jar!/com/echonest/api/v4/Song.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="36" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="64" column="13" selection-start="3272" selection-end="3272" vertical-scroll-proportion="2.0131578" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../jEN-latest/jEN-4.x.t/jEN.jar!/com/echonest/api/v4/SongParams.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="18" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.34774438" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_05/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="235" column="18" selection-start="10169" selection-end="10169" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataSetInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="21" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LyricProcessing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="12" selection-start="2007" selection-end="2007" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SongLyrics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataSetInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="15" column="18" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Stemmer.java">
@@ -765,37 +769,35 @@
         <state line="62" column="16" selection-start="1590" selection-end="1590" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SongFeatures.java">
+    <entry file="file://$PROJECT_DIR$/src/Stopwords.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="45" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.0">
+        <state line="7" column="19" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/BuildLyrics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="34" selection-start="2682" selection-end="2682" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lyrics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="114" selection-start="3341" selection-end="3341" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LyricProcessing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="144" selection-start="3490" selection-end="3490" vertical-scroll-proportion="0.0">
+        <state line="6" column="66" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Features.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="27" selection-start="6034" selection-end="6034" vertical-scroll-proportion="0.1532567">
+        <state line="15" column="57" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SongFeatures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="45" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="71" selection-start="4843" selection-end="4843" vertical-scroll-proportion="2.2375479">
           <folding />
         </state>
       </provider>

@@ -13,7 +13,7 @@ import java.util.List;
 public class Features {
     private EchoNestAPI en;
     private String API_KEY = "LH8NKVEQPJK33XZDV";
-    String dbFeatures = "jdbc:sqlite:C:\\Users\\Aaron\\Documents\\Final Year\\FinalYearProject\\SQLite\\track_features.db";
+    String dbFeatures = "jdbc:sqlite:Resources\\Databases\\track_features.db";
     String SQL_INSERT = "INSERT INTO features VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
     DataSetInfo dsi = new DataSetInfo();
 

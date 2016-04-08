@@ -1,10 +1,13 @@
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
 public class Stopwords {
-    public ArrayList<String> loadWords(String file) {
+    String file = "Resources\\Stopwords.txt";
+
+    public ArrayList<String> loadWords() {
         ArrayList<String> words = new ArrayList<String>();
         try{
             BufferedReader br = new BufferedReader(new FileReader(file));
@@ -20,7 +23,7 @@ public class Stopwords {
     }
 
     public boolean isStopWord(String word){
-        ArrayList<String> stopWords = loadWords("C:\\Users\\Aaron\\Documents\\Final Year\\FinalYearProject\\Music-Mood-Classification\\Stopwords.txt");
+        ArrayList<String> stopWords = loadWords();
         if(stopWords.contains(word.toLowerCase())) return true;
         else return false;
     }
@@ -45,23 +48,6 @@ public class Stopwords {
             if(w.contains("2x") || w.contains("x2")) continue;
             if(w.contains("3x") || w.contains("x3")) continue;
             else result += w + " ";
-        }
-        return result;
-    }
-
-    public String stemWords(String lyrics){
-        String result = "";
-        String[] words = lyrics.split("\\s+");
-        Stemmer stemmer = new Stemmer();
-        char[] char_arry;
-
-        for(String w: words){
-            char_arry = w.toLowerCase().toCharArray();
-            for (int j = 0; j < char_arry.length; j++){
-                stemmer.add(char_arry[j]);
-            }
-            stemmer.stem();
-            result += " " + stemmer.toString();
         }
         return result;
     }
