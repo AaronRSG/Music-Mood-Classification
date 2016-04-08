@@ -1,12 +1,11 @@
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class Stopwords {
-    String file = "Resources\\Stopwords.txt";
+    String file = "Resources\\Stopwords.txt";  // File containing a list of well known stopwords.
 
+    // Load stopwords from file and return as an ArrayList.
     public ArrayList<String> loadWords() {
         ArrayList<String> words = new ArrayList<String>();
         try{
@@ -22,11 +21,13 @@ public class Stopwords {
         return words;
     }
 
+    // Perform check to see if a term is contained in the list of stopwords.
     public boolean isStopWord(String word){
         ArrayList<String> stopWords = loadWords();
         if(stopWords.contains(word.toLowerCase())) return true;
         else return false;
     }
+    // Remove any terms in the lyrics of a song if they are featured on the list of stopwords.
     public String removeWords(String lyrics){
         String result = "";
         String[] words = lyrics.split("\\s+");
@@ -39,6 +40,7 @@ public class Stopwords {
         }
         return result;
     }
+    // Remove html tags and other unnecessary data in lyrics.
     public String removeLyricTags(String lyrics){
         String result = "";
         String words[] = lyrics.split("\\s+");

@@ -1,10 +1,3 @@
-/**
- * Created with IntelliJ IDEA.
- * User: Aaron
- * Date: 21/10/15
- * Time: 12:18
- * To change this template use File | Settings | File Templates.
- */
 public class SongFeatures {
     private String track_id;
     private String artist;

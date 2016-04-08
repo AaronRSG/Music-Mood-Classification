@@ -3,9 +3,10 @@ import com.sun.rowset.CachedRowSetImpl;
 import java.sql.*;
 
 public class DataSetInfo {
+    // Create a new table in a given database file.
     public void createTable(String dbURL, String query){
-        Connection connection = null;
-        Statement statement = null;
+        Connection connection;
+        Statement statement;
         try{
             Class.forName("org.sqlite.JDBC");
             connection = DriverManager.getConnection(dbURL);
@@ -20,6 +21,7 @@ public class DataSetInfo {
         System.out.println("The table has been created successfully.");
     }
 
+    // Query a database using a specified query. Results returned as a ResultSet.
     public ResultSet getInfo(String dbURL, String query) throws SQLException {
         Connection connection = null;
         Statement statement = null;

@@ -1,10 +1,3 @@
-/**
- * Created with IntelliJ IDEA.
- * User: Aaron
- * Date: 21/10/15
- * Time: 13:30
- * To change this template use File | Settings | File Templates.
- */
 public class SongLyrics {
     private String track_id;
     private String tag;
